@@ -1,0 +1,16 @@
+{
+  "name": "life-rpg",
+  "version": "1.0.0",
+  "description": "LIFE RPG - Turn Your Real Life Into an RPG. Gamified productivity full-stack web application.",
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('npm', ['run', 'dev:server'], { stdio: 'inherit', shell: true }); spawn('npm', ['run', 'dev:client'], { stdio: 'inherit', shell: true });\"",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["rpg", "gamification", "productivity", "quests", "habits"],
+  "author": "LIFE RPG Team",
+  "license": "MIT"
+}
